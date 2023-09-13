@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>algoritma</title>
+  </head>
+  <body>
+    <div id="luas-keliling-lingkaran"></div>
+    <script>
+      // judul algoritma
+      // menghitung luas dan keliling lingkaran
+      document.getElementById(
+        "luas-keliling-lingkaran"
+      ).innerHTML = `<h1>1. Judul Algoritma</h1> <br><h2> Menghitung luas dan keliling lingkaran <br><br></h2>`;
+
+      // input yang diperlukan untuk menghitung luas dan keliling lingkaran
+      // simpan "phi" dengan nilai 3.14
+      // simpan "r" dengan nilai berapapun
+      // simpan "luas" tanpa diberikan nilai. Ini akan kita isi nanti.
+      // simpan "keliling" tanpa diberikan nilai. Ini akan kita isi nanti.
+      document.getElementById(
+        "luas-keliling-lingkaran"
+      ).innerHTML += `<h1>2. Input-input Menghitung Luas dan Keliling</h1> <br> Simpan "phi" dengan nilai 3.14 <br> Simpan "r" dengan nilai berapapun <br> Simpan "luas" tanpa diberikan nilai. <br> Simpan "keliling" tanpa diberikan nilai. <br><br>`;
+
+      // langkah kalkulasi
+      // hitung hasil perkalian "phi" dengan "r" dengan "r"
+      // setelah mendapatkan hasil perhitungan, isikan hasilnya ke dalam "luas"
+      // hitung hasil perkalian "phi" dengan "r" dengan 2
+      // setelah mendapatkan hasil perhitungan, isikan hasilnya ke dalam "keliling"
+      document.getElementById(
+        "luas-keliling-lingkaran"
+      ).innerHTML += `<h1>3. Langkah Kalkulasi</h1> <br> Hitung hasil perkalian "phi" dengan "r" dengan "r" <br> Setelah mendapatkan hasil perhitungan, isikan hasilnya ke dalam "luas" <br> Hitung hasil perkalian "phi" dengan "r" dengan 2 <br> Setelah mendapatkan hasil perhitungan, isikan hasilnya ke dalam "keliling" <br><br>`;
+
+      // tampilkan nilai dari "luas"
+      // tampilkan nilai dari "keliling"
+      document.getElementById(
+        "luas-keliling-lingkaran"
+      ).innerHTML += `<h1>4. Hasil Kalkulasi</h1> <br> Tampilkan nilai "luas" <br> Tampilkan nilai "keliling" <br>`;
+
+      // hasil
+      document.getElementById(
+        "luas-keliling-lingkaran"
+      ).innerHTML += `<br> ============================== <br>`;
+
+      let phi = 3.14;
+      let r = 10;
+      let luas;
+      let keliling;
+
+      luas = phi * r * r;
+      keliling = phi * r * 2;
+
+      console.log(luas);
+      console.log(keliling);
+      document.getElementById(
+        "luas-keliling-lingkaran"
+      ).innerHTML += `Phi: ${phi} <br> r: ${r} <br> Luas: ${luas} <br> Keliling: ${keliling}`;
+    </script>
+  </body>
+</html>
